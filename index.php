@@ -8,6 +8,8 @@
 - vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà -->
 
 <?php
+// ini_set('display_errors' , 1 );
+// error_reporting( E_ALL );
 
 class Movie {
 
@@ -35,13 +37,18 @@ class Movie {
 
 }
 
-    $matrix = new Movie("Azione", "07/05/1999");
+    $matrix = new Movie("Matrix", "Azione", "07/05/1999");
     $matrix->setOscar(2);
+
+    // echo "Il film ha avuto ".$matrix->getOscar() . "oscar";
     var_dump($matrix);
 
     
-    $the_imitation_game = new Movie("Dramma", "29/08/2014");
+    $the_imitation_game = new Movie("The imitation game", "Dramma", "29/08/2014");
     $the_imitation_game->setOscar(5);
     var_dump($the_imitation_game);
 
+    
+
 ?>
+
